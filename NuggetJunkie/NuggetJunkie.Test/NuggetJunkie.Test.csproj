@@ -37,11 +37,24 @@
     <Reference Include="System" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="PackageTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\NuggetJunkie.Core\NuggetJunkie.Core.csproj">
+      <Project>{a5c29b5a-fb5b-46a8-a77a-7cd5e2ef93e3}</Project>
+      <Name>NuggetJunkie.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NuggetJunkie\NuggetJunkie.csproj">
+      <Project>{b839ff58-c4c6-4164-8c62-9a6a687d05cc}</Project>
+      <Name>NuggetJunkie</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{82A7F48D-3B50-4B1E-B82E-3ADA8210C358}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
