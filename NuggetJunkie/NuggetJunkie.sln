@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NuggetJunkie", "NuggetJunkie\NuggetJunkie.csproj", "{B839FF58-C4C6-4164-8C62-9A6A687D05CC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NuggetJunkie.Core", "NuggetJunkie.Core\NuggetJunkie.Core.csproj", "{A5C29B5A-FB5B-46A8-A77A-7CD5E2EF93E3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NuggetJunkie.Test", "NuggetJunkie.Test\NuggetJunkie.Test.csproj", "{FA8973C9-9F5F-4389-B778-BD5139356831}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B839FF58-C4C6-4164-8C62-9A6A687D05CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B839FF58-C4C6-4164-8C62-9A6A687D05CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B839FF58-C4C6-4164-8C62-9A6A687D05CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B839FF58-C4C6-4164-8C62-9A6A687D05CC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A5C29B5A-FB5B-46A8-A77A-7CD5E2EF93E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A5C29B5A-FB5B-46A8-A77A-7CD5E2EF93E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A5C29B5A-FB5B-46A8-A77A-7CD5E2EF93E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A5C29B5A-FB5B-46A8-A77A-7CD5E2EF93E3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FA8973C9-9F5F-4389-B778-BD5139356831}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA8973C9-9F5F-4389-B778-BD5139356831}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA8973C9-9F5F-4389-B778-BD5139356831}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA8973C9-9F5F-4389-B778-BD5139356831}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
