@@ -1,19 +1,12 @@
-﻿using System.IO;
+﻿using System.Collections.Generic;
 using System.Xml.Serialization;
 
 namespace NuggetJunkie.Core
 {
+    [XmlRoot("packages")]
     public class Packages
     {
-    }
-
-    public static class PackageModel
-    {
-        public static Packages LoadFile(string file)
-        {
-            var xml = new XmlSerializer(typeof(Packages));
-            using (var stream = File.OpenRead(file))
-                return (Packages)xml.Deserialize(stream);
-        }
+        [XmlElement("package")]
+        public List<Package> Entries { get; set; } = new List<Package>();
     }
 }
