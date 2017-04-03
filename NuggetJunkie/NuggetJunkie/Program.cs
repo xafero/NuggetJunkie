@@ -2,6 +2,8 @@
 using log4net;
 using log4net.Config;
 using NuggetJunkie.Core;
+using System.IO;
+using System.Linq;
 
 namespace NuggetJunkie
 {
@@ -18,9 +20,22 @@ namespace NuggetJunkie
 
         static void Process(Options o)
         {
-            foreach (var proj in ProjectModel.FindFiles(o.Project))
+            const string packFile = "packages.config";
+            foreach (var projFile in ProjectModel.FindFiles(o.Project))
             {
+                var proj = ProjectModel.LoadFile(projFile);
+                foreach (var refi in proj.Entries.Where(e => e.HintPath != null))
+                {
+                    var path = Path.GetFullPath(Path.Combine(proj.ProjectDirectory, refi.HintPath));
 
+                }
+                var packPath = Path.Combine(proj.ProjectDirectory, packFile);
+                Packages model;
+                if (File.Exists(packPath))
+                    model = PackageModel.LoadFile(packPath);
+                else
+                    model = new Packages();
+                PackageModel.StoreFile(model, packPath);
             }
         }
     }
