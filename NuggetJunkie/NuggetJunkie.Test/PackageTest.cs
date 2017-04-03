@@ -16,7 +16,7 @@ namespace NuggetJunkie.Test
         public void ShouldListPackages()
         {
             var files = PackageModel.FindFiles(root);
-            AreEqual(2, files.Length);
+            AreEqual(3, files.Length);
             var file1 = files.First();
             var model1 = PackageModel.LoadFile(file1);
             AreEqual("{'Id':'CommandLineParser','Version':'2.1.1-beta','TargetFramework':'net451'}",
